@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML & CSS Quiz</title>
+  <meta name="description" content="Short quiz to practice core HTML and CSS concepts.">
+  <meta name="author" content="Samuel Adu-Berekorang">
+  <link rel="stylesheet" href="styles/quiz.css">
+</head>
+<body>
+  <header>
+    <h1>HTML & CSS Fundamentals Quiz</h1>
+  </header>
+
+  <main>
+    <form>
+      <fieldset>
+        <legend>Answer all questions</legend>
+
+        <div class="form-row">
+          <label for="q1">1) What HTML element is used to create a hyperlink?</label>
+          <input type="text" id="q1" name="q1" placeholder="e.g., a">
+        </div>
+
+        <div class="form-row">
+          <label for="q2">2) In your own words, what does the CSS property <code>display: flex;</code> do?</label>
+          <textarea id="q2" name="q2" rows="4" placeholder="Short answer..."></textarea>
+        </div>
+
+        <div class="form-row">
+          <label for="q3">3) Which CSS selector targets elements by their class?</label>
+          <select id="q3" name="q3">
+            <option value="" selected disabled>Choose one...</option>
+            <option value="p">p</option>
+            <option value=".classname">.classname</option>
+            <option value="#idname">#idname</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="q4">4) What is the numeric value of the largest heading level in HTML?</label>
+          <input type="number" id="q4" name="q4" min="1" max="6" placeholder="1 - 6">
+        </div>
+
+        <div class="form-row actions">
+          <button type="submit">Submit Quiz</button>
+        </div>
+      </fieldset>
+    </form>
+  </main>
+</body>
+</html>
