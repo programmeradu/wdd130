@@ -149,6 +149,20 @@ footer .socialmedia img {
 }
 
 /* Contact page: map */
+.contact-intro { text-align: center; }
+
+.contact-info { text-align: center; }
+.contact-info address { margin: 4px 0 0; }
+
+.contact-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  text-align: left;
+  align-items: start;
+  margin-top: 12px;
+}
+
 .contact-info address {
   font-style: normal;
   line-height: 1.6;
@@ -184,6 +198,10 @@ footer .socialmedia img {
 /* Contact page: form */
 .contact-form-section form {
   max-width: 600px;
+}
+
+.contact-form .actions button {
+  width: 100%;
 }
 
 .form-row {

@@ -24,25 +24,55 @@
   <main>
     <section class="contact-intro">
       <h1>Contact Us</h1>
-      <p>Questions about trips, reservations, or gear? We’re here to help. Reach out anytime—we typically reply within one business day.</p>
+      <p>Questions about trips, reservations, or gear? We’re here to help. Reach out anytime, we typically reply within one business day.</p>
     </section>
 
     <section class="contact-info">
-      <h2>Company Information</h2>
+      <h2>Dry Oar Whitewater Rafting</h2>
       <address>
-        Dry Oar Whitewater Rafting<br>
         123 River Run Rd<br>
-        Boise, ID 83702
+        Accra, Ghana 00233
       </address>
-      <p><strong>Phone:</strong> <a href="tel:+12085551234">(208) 555-1234</a></p>
-      <p><strong>Email:</strong> <a href="mailto:info@dryoar.example">info@dryoar.example</a></p>
-      <div class="map">
-        <iframe src="https://www.google.com/maps?q=Boise%20River,%20Boise%20ID&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map showing Boise River"></iframe>
+      <p><strong>Phone:</strong> <a href="tel:+233556000000">+233556020623</a></p>
+      <p><strong>Email:</strong> <a href="mailto:info@dryoar.com">info@dryoar.com</a></p>
+
+      <div class="contact-panel">
+        <div class="map">
+          <iframe src="https://www.google.com/maps?q=Accra,Ghana&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map showing Boise River"></iframe>
+        </div>
+        <div class="contact-form">
+          <form>
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required>
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+            <fieldset class="form-row">
+              <legend>Message Purpose</legend>
+              <label for="purpose-general"><input type="radio" id="purpose-general" name="purpose" value="General Inquiry" required> General Inquiry</label>
+              <label for="purpose-reservation"><input type="radio" id="purpose-reservation" name="purpose" value="Reservation Question"> Reservation Question</label>
+              <label for="purpose-suggestion"><input type="radio" id="purpose-suggestion" name="purpose" value="Website Suggestion"> Website Suggestion</label>
+            </fieldset>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Type here..." required></textarea>
+            </div>
+            <div class="form-row">
+              <label for="subscribe"><input type="checkbox" id="subscribe" name="subscribe" value="yes"> Please subscribe me to the monthly newsletter</label>
+            </div>
+            <div class="form-row actions">
+              <button type="submit" id="send-message">Get in Touch!</button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
 
     <section class="team">
-      <h2>Meet the Team</h2>
+      <h2>We Are Here to Serve You</h2>
       <div class="team-grid">
         <figure>
           <img src="images/ridge-run.jpg" alt="Lead guide on the river">
@@ -72,19 +102,19 @@
         </div>
         <fieldset class="form-row">
           <legend>Purpose of Message</legend>
-          <label><input type="radio" name="purpose" value="General Inquiry" required> General Inquiry</label>
-          <label><input type="radio" name="purpose" value="Reservation Question"> Reservation Question</label>
-          <label><input type="radio" name="purpose" value="Website Suggestion"> Website Suggestion</label>
+          <label for="purpose-general"><input type="radio" id="purpose-general" name="purpose" value="General Inquiry" required> General Inquiry</label>
+          <label for="purpose-reservation"><input type="radio" id="purpose-reservation" name="purpose" value="Reservation Question"> Reservation Question</label>
+          <label for="purpose-suggestion"><input type="radio" id="purpose-suggestion" name="purpose" value="Website Suggestion"> Website Suggestion</label>
         </fieldset>
         <div class="form-row">
           <label for="message">Message</label>
           <textarea id="message" name="message" rows="5" required></textarea>
         </div>
         <div class="form-row">
-          <label><input type="checkbox" name="subscribe" value="yes"> Please subscribe me to the monthly newsletter</label>
+          <label for="subscribe"><input type="checkbox" id="subscribe" name="subscribe" value="yes"> Please subscribe me to the monthly newsletter</label>
         </div>
         <div class="form-row actions">
-          <button type="submit">Send Message</button>
+          <button type="submit" id="send-message">Send Message</button>
         </div>
       </form>
     </section>
